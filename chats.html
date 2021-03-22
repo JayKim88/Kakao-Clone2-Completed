@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Find | Kakao Clone</title>
+    <title>Chats | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -30,11 +30,14 @@
 
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Find</h1>
+        <h1 class="header__title">Chats</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
         </span>
         <span class="header__icon">
           <i class="fas fa-cog"></i>
@@ -43,67 +46,34 @@
     </header>
     <!-- Create header  -->
 
-    <main class="find">
-      <header class="find__header">
-        <ul class="find__header-list">
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-qrcode fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              QR Code
-            </span>
-          </li>
-          <li class="find_header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-user-plus fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Add by Contacts
-            </span>
-          </li>
-          <li class="find_header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-fingerprint fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Add by ID
-            </span>
-          </li>
-          <li class="find_header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-envelope fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Invite
-            </span>
-          </li>
-        </ul>
-      </header>
-      <!-- Create header in Main -->
-
-      <ul class="find__recommended">
-        <h5 class="find__title">
-          Recommended Friends
-        </h5>
-        <li class="find__friend friend friend--lg">
-          <div class="friend__column">
-            <img src="images/mouse.jpg" class="m-avatar friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Micky Mouse
-              </span>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/tiger.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Tiger
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going Home! This is friend__bottom-text!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__add-btn">
-              <i class="fas fa-user-plus"></i>
-            </div>
-          </div>
+          </a>
         </li>
       </ul>
     </main>
-    <!-- Create Find-Recommended in Main-->
+    <!-- it will be the father of chats column. -->
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
@@ -113,7 +83,8 @@
         </li>
         <li class="nav__list-item">
           <a href="chats.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -128,7 +99,7 @@
         </li>
       </ul>
     </nav>
-    <!-- Create Navigation Bar -->
+    <!-- Create navigation bar -->
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small!</span>
     </div>

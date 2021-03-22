@@ -10,9 +10,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Chats | Kakao Clone</title>
+    <title>Friends | Kakao Clone</title>
+    <!-- page 명칭-->
   </head>
   <body>
+    <!-- body: 화면에 표시되는 본문에 해당 -->
     <div class="status-bar">
       <div class="status bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -21,6 +23,7 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <!-- i.fas.volume-mute:  icon.fondawesomesolid.classname .. solid means full color-->
+        <!-- 단축키예시: i.fas.fa-volume-mute.fa-3x -->
         <i class="fas fa-wifi"></i>
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
@@ -30,14 +33,11 @@
 
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
+        <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
         </span>
         <span class="header__icon">
           <i class="fas fa-cog"></i>
@@ -46,45 +46,77 @@
     </header>
     <!-- Create header  -->
 
-    <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat chat">
-          <a href="chat.html">
-            <div class="chats__chat friend friend--lg">
-              <div class="friend__column">
-                <img src="images/tiger.jpg" class="m-avatar friend__avatar" />
-                <div class="friend__content">
-                  <span class="friend__name">
-                    Tiger
-                  </span>
-                  <span class="friend__bottom-text">
-                    Going Home! This is friend__bottom-text!
-                  </span>
-                </div>
-              </div>
-              <div class="friend__column">
-                <span class="chat__timestamp">
-                  March 8
-                </span>
-              </div>
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/giraffe.jpg" class="g-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Giraffe
+              </span>
+              <span class="friend__status">
+                Happy Korea Life!
+              </span>
             </div>
-          </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Create Main friends in main -->
+
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus friend</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/animals.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Plus Friend
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Plus Friend -->
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/roccoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Raccoon
+              </span>
+              <span class="friend__status">
+                Hello, I'm Raccoon!
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                동물의왕국 - 노래를찾는사람들
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
         </li>
       </ul>
     </main>
-    <!-- it will be the father of chats column. -->
+    <!-- Create Friends List -->
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
+          <a href="chats.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -99,7 +131,8 @@
         </li>
       </ul>
     </nav>
-    <!-- Create navigation bar -->
+    <!-- navigation 단축키: nav.nav>ul.nav_list>li.nav__list-item*4>a.nav__list-link>i.fas.fa-user -->
+    <!-- Create Navigation Bar -->
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small!</span>
     </div>
