@@ -17,14 +17,10 @@
     <!-- body: 화면에 표시되는 본문에 해당 -->
     <div class="status-bar">
       <div class="status bar__column">
-        <span class="status-bar__clock">13:54</span>
-      </div>
-      <div class="status bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <!-- i.fas.volume-mute:  icon.fondawesomesolid.classname .. solid means full color-->
-        <!-- 단축키예시: i.fas.fa-volume-mute.fa-3x -->
         <i class="fas fa-wifi"></i>
+      </div>
+      <span class="status-bar__clock">18:00</span>
+      <div class="status bar__column" style="display: flex; align-items: center;" >
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
@@ -40,7 +36,7 @@
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+            <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
@@ -106,11 +102,10 @@
       </ul>
     </main>
     <!-- Create Friends List -->
-
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
+          <a href="index.html" class="nav__list-link" style="border: 3px;">
             <i class="fas fa-user"></i>
           </a>
         </li>
