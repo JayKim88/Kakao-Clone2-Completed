@@ -1,7 +1,3 @@
-/* body {
-  background-color: blue;
-} */
-
 .header-wrapper {
   /*header sticky 를 만들기 위해 해당 클래스를 만들어 포지션을 fixed로 지정.*/
   position: fixed;
