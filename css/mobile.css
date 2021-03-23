@@ -4,8 +4,9 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(243, 222, 33);
+  background-color: #f7fa00;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: 600;
@@ -21,6 +22,13 @@
   .bigScreen {
     display: flex;
   }
+}
+.bigScreen img {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.bigScreen .bigScreen__text {
+  margin-bottom: 0.3rem;
 }
 /* 데스크탑 이용시 가로길이 550px 넘어갈 경우 주의창을 뜨게 하는 기능. */
 /* 커밋용 */
